@@ -1,0 +1,32 @@
+{
+    "name": "skotner/laravel-theme",
+    "license": "MIT",
+    "description": "Very simple theme package for Laravel.",
+    "keywords": ["laravel", "theme"],
+    "authors": [
+        {
+            "name": "Andreas Skotner",
+            "email": "andreas@skotner.net",
+            "homepage": "https://skotner.no",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": ">=6.20.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skotner\\Theme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Skotner\\Theme\\ThemeServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0@dev"
+    }
+}
